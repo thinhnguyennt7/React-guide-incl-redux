@@ -1,0 +1,26 @@
+
+** In person.js file
+const person = {
+    name: 'Thinh'
+}
+
+export default person
+// Note the default here is useful because when we import this func from another
+// file then we can call it any name we want.
+// for example: in line 18 and line 17, we import the person file with the diff name
+
+** In utility.js file
+export const clean = () => { ... }
+export const baseData = 10;
+
+// export here has no default
+
+** In app.js file
+import person from './person.js'
+import pr from './person.js'
+
+// These call name export
+import { baseData } from './utility.js'
+import { clean } from './utility.js'
+// or do this import { smth as Smth } from './utlity.js'
+// or if you want to import all the name do this: import * as bundled from './utlity.js'

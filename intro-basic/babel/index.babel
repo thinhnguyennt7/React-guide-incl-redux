@@ -1,0 +1,27 @@
+function Person(props) { // instead props, we can use any other name
+  return(
+    <div class='person'>
+      <h1>{props.name}</h1>
+      <p> Your age: [{props.age}]</p>
+    </div>
+  );
+}
+
+// Single page application
+var app = (
+  <div>
+    <Person name = "Thinh" age ="21" />
+    <Person name = "Vinh" age ="25" />
+  </div>
+);
+
+ReactDOM.render(app,
+document.querySelector('#app'));
+
+// Another way to render data to single page application
+// ReactDOM.render(<Person name='Thinh' age='12' />, document.querySelector('#app'));
+
+
+// Single page application: Only one HTML page, content í rendered on Client. All under one root
+
+// Multi page applications: Multiple HTML pages, content í rendered on Server

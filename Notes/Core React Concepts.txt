@@ -1,0 +1,14 @@
+All Core React Concepts:
+
++ Build Workflow:
+    Why? Optimize Code -> Next-generation JS features -> More Productive
+
+    How? Use Dependency Management Tool npm or yarn, Use bundler (webpack),
+        Use Compiler ( Next-Gen Js) Babel _ Presets, Use Development Server.
+
+
++ Set up:
+    sudo npm install create-react-app -g
+    create-react-app nameApp
+    cd nameApp
+    npm start : to run sever

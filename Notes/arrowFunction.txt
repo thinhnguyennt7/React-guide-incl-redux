@@ -1,0 +1,38 @@
+ARROW FUNCTION:
+    + Regular function create:
+        function myFunc() {
+            ....
+        }
+
+    + Arrow function create:
+        const myFunc = () => {
+            ....
+        }
+
+    // The benefit of arrow function help developer to solve problem with this keyword
+    // in regular function js systax
+
+    // When we use this inside the arrow function it will keep its content and not change
+    // surprisingly on runtime.
+
+    #1:
+    const printMyName = (name) => {
+        console.log(name);
+    }
+    printMyName('Thinh');
+
+    #2: No parenthesis next to name, this only work for only 1 parameter
+    const printMyName = name => {
+        console.log(name);
+    }
+    printMyName('Thinh');
+
+    #3:
+    function printMyName(name) {
+        console.log(name);
+    }
+    printMyName('Thinh');
+
+    #4: Short way with return statement
+    const multiply = (number) => number * 2;
+    console.log(multiply(2));
